@@ -267,7 +267,6 @@
   /* ---------- subtle parallax on hero arch ---------- */
   if (!reduceMotion) {
     var arch = document.querySelector('.arch');
-    var seal = document.querySelector('.seal');
     var heroVisual = document.querySelector('.hero__visual');
 
     if (arch && heroVisual) {
@@ -276,7 +275,6 @@
         if (y > 900) return;
         var shift = y * 0.06;
         arch.style.transform = 'translateY(' + shift + 'px)';
-        if (seal) seal.style.transform = 'translateY(' + (shift * -0.5) + 'px)';
       }, { passive: true });
     }
   }
